@@ -71,7 +71,7 @@ class TapHubspot(Tap):
             streams.ProductStream(self),
             streams.TicketStream(self),
             streams.QuoteStream(self),
-            streams.GoalStream(self),
+            # streams.GoalStream(self),  # Removed - requires crm.objects.goals.read scope
             streams.CallStream(self),
             streams.CommunicationStream(self),
             streams.EmailStream(self),
